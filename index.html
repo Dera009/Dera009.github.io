@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dera — Web Designer &amp; Developer</title>
+  <meta name="description" content="Dera (Okam Chidera) designs and builds modern websites for businesses and brands — thoughtful design, clean development, purposeful digital experiences.">
+
+  <!-- Favicon: simple accent-colored mark, no image asset needed -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2224%22 fill=%22%23160D0C%22/><text x=%2250%22 y=%2266%22 font-size=%2258%22 font-family=%22sans-serif%22 font-weight=%22700%22 fill=%22%23E85A4F%22 text-anchor=%22middle%22>D</text></svg>">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ================= NAVIGATION ================= -->
+  <header class="site-header" id="site-header">
+    <div class="nav-inner container">
+      <a href="#" class="brand" aria-label="Dera — home">DERA</a>
+
+      <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-primary btn-sm nav-cta">Contact Me</a>
+        <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="mobile-nav" id="mobile-nav">
+      <!-- Ambient backdrop: a canvas of drifting particles plus a large
+           low-opacity word that mirrors whichever nav link has focus.
+           Purely decorative, so it's hidden from assistive tech. -->
+      <div class="mobile-nav-atmosphere" aria-hidden="true">
+        <canvas class="mobile-nav-particles" id="mobile-nav-particles"></canvas>
+        <span class="mobile-nav-word" id="mobile-nav-word"></span>
+      </div>
+
+      <nav aria-label="Mobile">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="home">
+      <div class="hero-field" aria-hidden="true">
+        <div class="hero-wash"></div>
+        <canvas class="hero-orb" id="hero-orb"></canvas>
+        <div class="grid-overlay"></div>
+        <div class="hero-floor">
+          <div class="hero-floor-grid"></div>
+        </div>
+        <div class="hero-vignette"></div>
+      </div>
+
+      <p class="hero-ghost" aria-hidden="true">Dera</p>
+
+      <div class="container hero-inner">
+        <p class="eyebrow reveal">Web Designer &amp; Developer</p>
+
+        <h1 class="hero-title reveal">
+          I design and build modern<br>
+          websites for <span class="accent-text">businesses</span><br>
+          &amp; <span class="accent-text">brands.</span>
+        </h1>
+
+        <p class="hero-sub reveal">
+          Creative, purposeful digital experiences built to help brands stand out and grow.
+        </p>
+
+        <div class="hero-actions reveal">
+          <a href="#contact" class="btn btn-primary btn-interactive">
+            <span class="btn-interactive-label">Contact Me</span>
+            <svg class="btn-interactive-arrow" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+          <a href="#services" class="btn btn-ghost">View Services</a>
+        </div>
+      </div>
+
+      <div class="scroll-cue reveal" aria-hidden="true">
+        <span class="scroll-line"></span>
+        <span>Scroll</span>
+      </div>
+    </section>
+
+    <!-- ================= SERVICES ================= -->
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">What I Do</p>
+          <h2>Services built around your goals</h2>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card reveal">
+            <span class="service-index">01</span>
+            <h3>Website Design</h3>
+            <p>Modern, thoughtful website designs built around your brand, audience, and goals.</p>
+          </article>
+
+          <article class="service-card reveal">
+            <span class="service-index">02</span>
+            <h3>Website Development</h3>
+            <p>Responsive, fast, polished websites that turn designs into functional digital experiences.</p>
+          </article>
+
+          <article class="service-card reveal">
+            <span class="service-index">03</span>
+            <h3>Landing Pages</h3>
+            <p>Focused landing pages designed to communicate value clearly and encourage action.</p>
+          </article>
+
+          <article class="service-card reveal">
+            <span class="service-index">04</span>
+            <h3>Business Websites</h3>
+            <p>Professional websites that give businesses a strong and credible online presence.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="about" id="about">
+      <div class="container about-grid">
+        <div class="about-head reveal">
+          <p class="eyebrow">About</p>
+          <h2>Okam Chidera,<br>known as Dera.</h2>
+        </div>
+
+        <div class="about-body reveal">
+          <p>
+            I'm Dera — a web designer and developer focused on creating modern digital
+            experiences for businesses and brands.
+          </p>
+          <p>
+            I enjoy turning ideas into clean, useful, and visually engaging websites.
+            I'm constantly learning, experimenting, and improving my craft, because I
+            believe good digital experiences shouldn't just look good — they should
+            have a purpose.
+          </p>
+
+          <ul class="about-tags">
+            <li>Design</li>
+            <li>Development</li>
+            <li>Craft</li>
+            <li>Curiosity</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SELECTED WORK ================= -->
+    <section class="work" id="work">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Selected Work</p>
+          <h2>Projects, coming soon</h2>
+          <p class="section-lede">
+            I'm currently building out my portfolio. This space is reserved for real
+            projects — each card below shows how they'll be presented once they're ready.
+          </p>
+        </div>
+
+        <div class="work-grid">
+          <!-- Reusable project-card placeholder. Duplicate this article and fill in
+               real content when a project is ready: image, name, description,
+               category, tech list, and a live link on the "View Project" button. -->
+          <article class="project-card project-card--empty reveal">
+            <div class="project-media" aria-hidden="true">
+              <span class="project-media-mark">01</span>
+            </div>
+            <div class="project-body">
+              <span class="project-category">Category</span>
+              <h3 class="project-name">Project name</h3>
+              <p class="project-desc">A short description of the project will go here.</p>
+              <ul class="project-tech">
+                <li>Tech</li>
+                <li>Stack</li>
+              </ul>
+              <span class="btn btn-ghost btn-sm project-link" aria-disabled="true">View Project</span>
+            </div>
+          </article>
+
+          <article class="project-card project-card--empty reveal">
+            <div class="project-media" aria-hidden="true">
+              <span class="project-media-mark">02</span>
+            </div>
+            <div class="project-body">
+              <span class="project-category">Category</span>
+              <h3 class="project-name">Project name</h3>
+              <p class="project-desc">A short description of the project will go here.</p>
+              <ul class="project-tech">
+                <li>Tech</li>
+                <li>Stack</li>
+              </ul>
+              <span class="btn btn-ghost btn-sm project-link" aria-disabled="true">View Project</span>
+            </div>
+          </article>
+
+          <article class="project-card project-card--empty reveal">
+            <div class="project-media" aria-hidden="true">
+              <span class="project-media-mark">03</span>
+            </div>
+            <div class="project-body">
+              <span class="project-category">Category</span>
+              <h3 class="project-name">Project name</h3>
+              <p class="project-desc">A short description of the project will go here.</p>
+              <ul class="project-tech">
+                <li>Tech</li>
+                <li>Stack</li>
+              </ul>
+              <span class="btn btn-ghost btn-sm project-link" aria-disabled="true">View Project</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROCESS ================= -->
+    <section class="process" id="approach">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">My Approach</p>
+          <h2>How a project comes together</h2>
+        </div>
+
+        <ol class="process-list">
+          <li class="process-step reveal">
+            <span class="process-index">01</span>
+            <h3>Discover</h3>
+            <p>Understand the business, audience, goals, and problem.</p>
+          </li>
+          <li class="process-step reveal">
+            <span class="process-index">02</span>
+            <h3>Design</h3>
+            <p>Create a clear visual direction and user experience.</p>
+          </li>
+          <li class="process-step reveal">
+            <span class="process-index">03</span>
+            <h3>Build</h3>
+            <p>Turn the design into a responsive, functional website.</p>
+          </li>
+          <li class="process-step reveal">
+            <span class="process-index">04</span>
+            <h3>Refine</h3>
+            <p>Test, improve, polish, and make sure everything feels right.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ================= FINAL CTA ================= -->
+    <section class="final-cta">
+      <div class="container final-cta-inner reveal">
+        <h2>Have an idea?<br>Let's build it.</h2>
+        <p>Whether you need a new website, a landing page, or a stronger digital presence, let's talk.</p>
+        <a href="#contact" class="btn btn-primary btn-interactive">
+          <span class="btn-interactive-label">Contact Me</span>
+          <svg class="btn-interactive-arrow" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Contact</p>
+          <h2>Connect With Me</h2>
+          <p class="section-lede">Have a project in mind or just want to talk? Reach out through whichever channel works best for you.</p>
+        </div>
+
+        <!-- Contact/social links live here as a simple list so new platforms
+             can be added later by copying a <li> and swapping the icon + href.
+             The phone number / email / handle is kept as an aria-label rather
+             than visible text, matching the icon-first panel layout. -->
+        <div class="contact-panel reveal">
+          <ul class="contact-list">
+            <li class="contact-item">
+              <a href="https://wa.me/77027304084" class="contact-link" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp: +7 702 730 4084">
+                <span class="contact-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.6 14.2c-.3-.1-1.7-.8-2-1-.3-.1-.5-.1-.7.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5C10 9 9.5 7.8 9.3 7.3c-.2-.5-.4-.4-.5-.4h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3z" fill="currentColor"/><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm0 1.8a8.2 8.2 0 0 1 6.9 12.6l-.2.4.3 1.9-1.9-.5-.4.2A8.2 8.2 0 1 1 12 3.8z" fill="currentColor"/></svg>
+                </span>
+                <span class="contact-label">WhatsApp</span>
+              </a>
+            </li>
+
+            <li class="contact-item">
+              <a href="mailto:VictorChidera291@gmail.com" class="contact-link" aria-label="Email: VictorChidera291@gmail.com">
+                <span class="contact-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2.5" y="4.5" width="19" height="15" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M3.5 6.5l8.5 6 8.5-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <span class="contact-label">Email</span>
+              </a>
+            </li>
+
+            <li class="contact-item">
+              <a href="https://linkedin.com/in/your-profile" class="contact-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn: linkedin.com/in/your-profile">
+                <span class="contact-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2.5" y="2.5" width="19" height="19" rx="3" stroke="currentColor" stroke-width="1.5"/><path d="M7.5 10.5v6M7.5 7.8v.01M11.5 16.5v-3.5c0-1.1.7-2 2-2s2 .9 2 2v3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <span class="contact-label">LinkedIn</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <p class="contact-note">LinkedIn is coming soon — reach out via WhatsApp or email in the meantime.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="footer-glow" aria-hidden="true"></div>
+
+    <div class="container footer-inner">
+      <div class="footer-brand reveal reveal-blur">
+        <a href="#" class="brand">DERA</a>
+        <p>Web Designer &amp; Developer</p>
+        <p class="footer-copyright">&copy; <span id="year"></span> Dera. All rights reserved.</p>
+      </div>
+
+      <div class="footer-col reveal reveal-blur">
+        <h3 class="footer-col-label">Navigate</h3>
+        <nav aria-label="Footer">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer-col reveal reveal-blur">
+        <h3 class="footer-col-label">Connect</h3>
+        <ul class="footer-social">
+          <li>
+            <a href="https://wa.me/77027304084" target="_blank" rel="noopener noreferrer">
+              <svg class="footer-social-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.6 14.2c-.3-.1-1.7-.8-2-1-.3-.1-.5-.1-.7.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5C10 9 9.5 7.8 9.3 7.3c-.2-.5-.4-.4-.5-.4h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3z" fill="currentColor"/><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm0 1.8a8.2 8.2 0 0 1 6.9 12.6l-.2.4.3 1.9-1.9-.5-.4.2A8.2 8.2 0 1 1 12 3.8z" fill="currentColor"/></svg>
+              WhatsApp
+            </a>
+          </li>
+          <li>
+            <a href="mailto:VictorChidera291@gmail.com">
+              <svg class="footer-social-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2.5" y="4.5" width="19" height="15" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M3.5 6.5l8.5 6 8.5-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Email
+            </a>
+          </li>
+          <li>
+            <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer">
+              <svg class="footer-social-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2.5" y="2.5" width="19" height="19" rx="3" stroke="currentColor" stroke-width="1.5"/><path d="M7.5 10.5v6M7.5 7.8v.01M11.5 16.5v-3.5c0-1.1.7-2 2-2s2 .9 2 2v3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              LinkedIn
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
